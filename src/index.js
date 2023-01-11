@@ -6,6 +6,10 @@ const bot = new TelegramBot(token, { polling: true});
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
-  console.log(msg.text);
-  bot.sendMessage(chatId, 'Received your message');
+  if (msg.text === '/start') {
+    bot.sendMessage(chatId, 'Hello');
+  }
+    
+  
+
 });
