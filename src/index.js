@@ -42,7 +42,7 @@ else{
             '<b>Score:</b>  ' + data['data']['Media']['averageScore'] + '\n \n'+
             '<b>Popularity:</b>  ' + data['data']['Media']['popularity'] + '\n \n'+
             '<b>Start Date:</b>  ' + data['data']['Media']['startDate']['year'] + '-' + data['data']['Media']['startDate']['month'] + '-' + data['data']['Media']['startDate']['day'] + '\n \n'+
-            '<b>Studios:</b>  ' + data['data']['Media']['studios']['nodes'][0]['name'] + '\n \n'+
+            //'<b>Studios:</b>  ' + data['data']['Media']['studios']['nodes'][0]['name'] + '\n \n'+
             '<b>Description:</b>  ' + description
             
      
