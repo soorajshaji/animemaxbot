@@ -20,7 +20,8 @@ if (msg.text === '/start') {
 
 }
 
-anime(msg.text).then((data) => {
+else{
+    anime(msg.text).then((data) => {
     
         //access the description from the query without br tags and only with one paragraph
         
@@ -63,8 +64,8 @@ anime(msg.text).then((data) => {
         });
 
 
- });
-//console.log(data['data']['Media']);    
+ });  
+}
 
     
 
