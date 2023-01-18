@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 
 //require('dotenv').config();
 
-const token = "5926132541:AAGH5bZtH1NNI9yCkKfx_yNU3Ei5PR7l-4k";
+const token = "1617942474:AAHnkhLPK25XGT6L_i9n489p9FRn0Q45cRc";
 
 const bot = new TelegramBot(token, { polling: true});
 
@@ -21,6 +21,7 @@ if (msg.text === '/start') {
 }
 
 else{
+    
     anime(msg.text).then((data) => {
     
         //access the description from the query without br tags and only with one paragraph
@@ -68,6 +69,7 @@ else{
 
 
  });  
+
 }
 
     
