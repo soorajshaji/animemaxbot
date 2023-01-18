@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 
 //const token = require('dotenv').config();
 //const token = "5926132541:AAGH5bZtH1NNI9yCkKfx_yNU3Ei5PR7l-4k";
-const token = token_railway;
+const token = ${{shared.token_railway}};
 
 const bot = new TelegramBot(token, { polling: true});
 
