@@ -9,7 +9,7 @@ const bot = new TelegramBot(token, { polling: true});
 
 
 
-bot.on('message', (msg) => {
+bot.onText('message', (msg) => {
 const chatId = msg.chat.id;
 if (msg.text === '/start') {
     bot.sendPhoto(chatId, 'https://cdn.vox-cdn.com/thumbor/BKMlgrrrFzcuuY-zjbBxOrNYrvI=/0x0:3000x2000/1820x1024/filters:focal(1260x760:1740x1240):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70507103/jbareham_220211_ecl1072_valentines_anime_0001.0.jpg', {
