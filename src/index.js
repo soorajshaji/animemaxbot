@@ -60,9 +60,12 @@ bot.onText(/\/(\w+ ?)*$/, (msg) => {
                 parse_mode: 'HTML', 
                 reply_markup: {
                     inline_keyboard: [
-                        [{text: 'GoGoAnime', url: 'https://www1.gogoanime.bid/'+data['data']['Media']['title']['english']},{text: 'Zoro', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']}],
-                        [{text: 'More', url: data['data']['Media']['siteUrl']}],
+                        [{text: 'Zoro', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']},{text: 'More', url: data['data']['Media']['siteUrl']}],
                         
+                        
+                        //create button that download the anime
+                        [{text: 'Download', url: 'https://animekisa.tv/download/'+data['data']['Media']['title']['english']}]
+
                         
                         
                         
