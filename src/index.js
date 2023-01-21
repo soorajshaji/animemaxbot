@@ -62,6 +62,8 @@ bot.onText(/\/(\w+ ?)*$/, (msg) => {
                     inline_keyboard: [
     
                         [{text: 'More', url: data['data']['Media']['siteUrl']}],
+                        [{text: 'Watch', url: 'https://www4.gogoanime.io/category/'+data['data']['Media']['title']['english']}],
+                        [{text: 'Watch', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']}],
                         
                         
                     ]
