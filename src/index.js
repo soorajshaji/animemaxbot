@@ -49,7 +49,7 @@ bot.onText(/\/(\w+ ?)*$/, (msg) => {
                 '<b>Popularity:</b>  ' + data['data']['Media']['popularity'] + '\n \n'+
                 '<b>Start Date:</b>  ' + data['data']['Media']['startDate']['year'] + '-' + data['data']['Media']['startDate']['month'] + '-' + data['data']['Media']['startDate']['day'] + '\n \n'+
                 '<b>End Date:</b>  ' + enddate + '\n \n'+
-                //'<b>Studios:</b>  ' + data['data']['Media']['studios']['nodes'][0]['name'] + '\n \n'+
+                '<b>Studios:</b>  ' + data['data']['Media']['studios']['nodes'][0]['name'] + '\n \n'+
                 '<b>Description:</b>  ' + description
                 
          
@@ -60,7 +60,7 @@ bot.onText(/\/(\w+ ?)*$/, (msg) => {
                 parse_mode: 'HTML', 
                 reply_markup: {
                     inline_keyboard: [
-                        [{text: 'GoGoAnime', url: 'https://www1.gogoanime.bid/category/'+data['data']['Media']['title']['english']},{text: 'Zoro', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']}],
+                        [{text: 'GoGoAnime', url: 'https://www1.gogoanime.bid/'+data['data']['Media']['title']['english']},{text: 'Zoro', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']}],
                         [{text: 'More', url: data['data']['Media']['siteUrl']}],
                         
                         
