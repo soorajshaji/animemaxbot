@@ -63,8 +63,6 @@ bot.onText(/\/(\w+ ?)*$/, (msg) => {
                         [{text: 'Zoro', url: 'https://zoro.to/search?keyword='+data['data']['Media']['title']['english']},{text: 'More', url: data['data']['Media']['siteUrl']}],
                         
                         
-                        //create button that download the anime
-                        [{text: 'Download', url: 'https://animekisa.tv/download/'+data['data']['Media']['title']['english']}]
 
                         
                         
